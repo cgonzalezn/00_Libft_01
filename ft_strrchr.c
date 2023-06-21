@@ -1,37 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/21 16:25:46 by cgonzal2          #+#    #+#             */
+/*   Updated: 2023/06/21 16:28:50 by cgonzal2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-  int  i;
-  char  temp[ft_strlen(str)];
+	int		i;
+	char	temp[ft_strlen(str)];
 
-  i = ft_strlen(str);
-  while(str[i]!='0')
-    {
-      if (str[i-1] == c)
-        temp
-        return (ft_strncpy());
-    }
-  
-  
-}
-
-
-
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    const char *str = "Hello, world!";
-    char c = 'o';
-
-    char *result = strrchr(str, c);
-    if (result != NULL) {
-        printf("Última aparición de '%c' encontrada en: %s\n", c, result);
-    } else {
-        printf("'%c' no se encontró en la cadena.\n", c);
-    }
-
-    return 0;
+	i = ft_strlen(str);
+	while (str[i] != '0')
+	{
+		if (str[i - 1] == c)
+			return (ft_strncpy());
+	}
 }
