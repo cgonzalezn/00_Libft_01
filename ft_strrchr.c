@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:25:46 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/21 16:28:50 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/06/21 16:32:37 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int		i;
-	char	temp[ft_strlen(str)];
+	char	temp[];
 
 	i = ft_strlen(str);
 	while (str[i] != '0')
