@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:21:28 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/21 16:23:08 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/06/22 19:51:40 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_bzero(void *ptr, size_t len) {
-  char *p;
+void	*ft_bzero(void *ptr, size_t len)
+{
+	char	*p;
 
-  p = ft_memset(ptr, 0, len);
-  return (p);
+	p = ft_memset(ptr, 0, len);
+	return (p);
 }
