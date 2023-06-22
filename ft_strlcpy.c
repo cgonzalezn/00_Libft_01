@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/21 16:26:37 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/22 13:29:07 by cgonzal2         ###   ########.fr       */
+/*   Created: 2023/05/27 17:24:56 by cgonzal2          #+#    #+#             */
+/*   Updated: 2023/06/22 13:14:17 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "libft.h"
 
-char *ft_strncpy(char *dest, char *src, unsigned int n);
-char *ft_strcpy(char *dest, char *src);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	index;
+	unsigned int	count;
 
-void *ft_memset(void *ptr, int c, size_t len);
-char *ft_strrchr(const char *str, int c);
-size_t ft_strlen(const char *str);
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+	index = 0;
+	count = 0;
+	while (src[count] != '\0')
+		count++;
+	if (size > 0)
+	{
+		while (index < size - 1 && src[index] != '\0')
+		{
+			dest[index] = src[index];
+			index++;
+		}
+		dest[index] = '\0';
+	}
+	return (count);
+}
 
-#endif
