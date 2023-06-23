@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/21 16:21:28 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/21 16:23:08 by cgonzal2         ###   ########.fr       */
+/*   Created: 2023/06/22 20:27:53 by cgonzal2          #+#    #+#             */
+/*   Updated: 2023/06/22 20:35:12 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int c, size_t len)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	char	*p;
-	int		i;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	p = (char *)ptr;
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
 	i = 0;
-	while ((i < len))
+	while (i < n)
 	{
-		p[i] = (char) c;
+		d[i] = s[i];
+		if (s[i] == (unsigned char)c)
+			return;
 		i++;
 	}
-	return (ptr);
 }
