@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/27 17:24:56 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/22 20:39:29 by cgonzal2         ###   ########.fr       */
+/*   Created: 2023/06/30 20:07:18 by cgonzal2          #+#    #+#             */
+/*   Updated: 2023/06/30 20:07:39 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (count);
 }
-
