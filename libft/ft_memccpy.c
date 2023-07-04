@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 20:27:53 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/30 20:41:35 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/04 12:15:49 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 			return ((void *)(d + i + 1));
 		i++;
 	}
+	return (NULL);
 }
 
 /*
