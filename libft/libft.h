@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:26:37 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/10 22:27:18 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/13 22:36:31 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,7 @@ int				ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
 size_t			ft_strlen(const char *str);
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
-
-
-char			*ft_strrchr(const char *str, int c);
-
-
+char			*strchr(const char *str, int c);
+char 			*ft_strrchr(const char *str, int c);
 
 #endif
