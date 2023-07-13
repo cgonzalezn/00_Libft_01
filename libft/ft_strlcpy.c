@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 20:07:18 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/30 20:07:39 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/04 13:56:19 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	index;
-	unsigned int	count;
+	size_t	index;
+	size_t	count;
 
 	index = 0;
 	count = 0;
