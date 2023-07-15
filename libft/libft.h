@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:26:37 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/13 22:36:54 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/15 14:58:57 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,18 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 char			*strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
+char			*ft_strnstr(const char *haystack, const char *needle,
+					size_t len);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
+int				ft_atoi(const char *str);
+int				ft_isdigit(int c);
+int				ft_isalpha(int c);
+int				ft_isalnum(int c);
+int				ft_isascii(int c);
+int				ft_isprint(int c);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
+void			*ft_calloc(size_t nmemb, size_t size);
+
 
 #endif
