@@ -6,13 +6,13 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:21:44 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/06/21 16:23:06 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/15 16:10:36 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 

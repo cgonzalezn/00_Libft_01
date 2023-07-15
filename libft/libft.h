@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:26:37 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/15 14:58:57 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/15 16:15:00 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include <unistd.h>
 
 char			*ft_strncpy(char *dest, const char *src, unsigned int n);
-char			*ft_strcpy(char *dest, char *src);
+char			*ft_strcpy(char *dest, const char *src);
+
 
 void			*ft_memset(void *ptr, int c, size_t len);
 void			*ft_bzero(void *ptr, size_t len);
@@ -43,6 +44,8 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 void			*ft_calloc(size_t nmemb, size_t size);
+char			*ft_strdup(const char *str);
+
 
 
 #endif
