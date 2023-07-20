@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:57:22 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/04 12:59:26 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/20 19:17:53 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 {
 	const unsigned char	*p;
 	unsigned char		v;
-	int					i;
+	size_t				i;
 
 	p = (const unsigned char *)ptr;
 	v = (unsigned char)value;

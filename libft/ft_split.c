@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 10:05:26 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/18 11:40:51 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/20 19:25:33 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,7 @@ char	**ft_split(char const *s, char c)
 {
 	int		word_count;
 	char	**result;
-	int		i;
 
-	i = 0;
 	if (!s || !c)
 		return (NULL);
 	word_count = count_words(s, c);

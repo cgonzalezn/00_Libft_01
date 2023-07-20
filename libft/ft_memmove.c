@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:16:13 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/04 13:20:38 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/20 19:19:53 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*t1;
 	unsigned char	*t2;
-	int				i;
 
 	t1 = (unsigned char *)dest;
 	t2 = (unsigned char *)src;

@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 19:24:54 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/15 19:35:38 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/20 22:32:59 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strjoin(const char *str1, const char *str2)
 	ft_strcat(result, str2);
 	return (result);
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -51,3 +51,4 @@ int	main(void)
 	}
 	return (0);
 }
+*/

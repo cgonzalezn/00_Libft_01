@@ -6,13 +6,13 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 10:56:48 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/15 11:25:23 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/20 22:44:47 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	needle_len;
 	size_t	i;
@@ -42,7 +42,7 @@ int main() {
     char needle[] = "world";
     size_t len = strlen(haystack);
 
-    char *result = strnstr(haystack, needle, len);
+    char *result = ft_strnstr(haystack, needle, len);
     if (result != NULL) {
         printf("Substring found at position: %ld\n", result - haystack);
     } else {
