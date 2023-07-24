@@ -6,11 +6,17 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 14:11:05 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/15 14:29:13 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/24 17:24:18 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
+
+static int	ft_isspace(int c)
+{
+	return (c == ' ' || (c >= 9 && c <= 13));
+}
 
 int	ft_atoi(const char *str)
 {
@@ -21,7 +27,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] == ' ')
+	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{

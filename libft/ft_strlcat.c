@@ -11,7 +11,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (dst_len >= size)
 		return (src_len + size);
 	ft_strncpy(dst + dst_len, src, size - dst_len - 1);
-	dst[dst_len + src_len] = '\0';
+	dst[size - 1] = '\0';
 	return (dst_len + src_len);
 }
 /*

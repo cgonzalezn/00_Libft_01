@@ -6,7 +6,7 @@
 /*   By: cgonzal2 <cgonzal2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 16:25:46 by cgonzal2          #+#    #+#             */
-/*   Updated: 2023/07/13 21:50:34 by cgonzal2         ###   ########.fr       */
+/*   Updated: 2023/07/24 13:44:47 by cgonzal2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ char	*ft_strrchr(const char *str, int c)
 	size_t	location;
 
 	location = ft_strlen(str);
+	if (c == 0)
+		return ((char *)str + location);
 	while (location > 0)
 	{
-		location --;
 		if (str[location] == c)
 			return ((char *)&str[location]);
-	}	
-	if (str[location] == c)
-		return ((char *)&str[location]);
+		location--;
+	}
 	return (NULL);
 }
 /*
